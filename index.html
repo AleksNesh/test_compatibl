@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="colorsApp">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendor.min.css">
+	<link rel="stylesheet" href="app.min.css">
+	<script src="vendor.min.js"></script>
+	<script src="app.min.js"></script>
+</head>
+
+<body>
+
+<table  ng-controller="colorsController">
+	<tr class="row" ng-repeat="color in colorsArray">
+		<td class="col-xs-6" style="color:{{color.hexValue}}">{{color.colorName}}</td>
+		<td class="col-xs-6" style="background:{{color.hexValue}}"></td>
+	</tr>
+</table>
+</body>
+</html>
